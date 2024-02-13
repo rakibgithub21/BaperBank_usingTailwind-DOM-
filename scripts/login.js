@@ -9,8 +9,8 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     // DO NOT VERIFY email and password on the client side:
 
     if (email === 'sontan@bap.com' && password === 'secret') {
-        console.log('valid user');
+        window.location.href = 'bank.html'
     } else {
-        console.log('invalid user');
+        alert('email and password not matched')
     }
 })
